@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 1440px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li {
+    display: inline-block;
+}
+header nav .gnb li {
+    margin: 0 20px;
+}
+
+/* > 자식 선택자
+header > ul => 자식인 ul만 선택
+header ul => 자식, 자손 모든 ul을 선택 */
+header > ul li {
+    margin-left: 10px;
+}
+
+.main_visual {
+    height: 100vh;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 80px;
+}
+
+.cont01 {
+    background-color: rgb(127, 159, 255);
+    padding: 100px 0;
+}
+.cont01 h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    /* 가운데정렬
+    글자크기 40px
+    아래쪽으로 여백 30px 띄우기 */
+}
+.cont01 .list {
+/* item들끼리 가로로 나열
+display:flex를 사용 */
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont01 .list .item {
+    width: 464px;
+    height: 464px;
+    background-color: palegoldenrod;
+    color: royalblue;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 464px; 
+    font-size: 25px;
+    /* 
+    가로 : 464px
+    세로 : 464px
+    배경컬러 
+    텍스트컬러
+    모서리곡선 : 네개 모두 20px
+    글자 가운데 정렬
+    높이 가운데 정렬
+    글자 크기 : 25px
+    */
+}
+
+.cont02 {
+    background-color: palegreen;
+    padding: 100px 0;
+}
+.cont02 h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.cont02 .list {
+    text-align: center;
+    /* display:inline-block된 자식을
+    가운데 배치 */
+}
+/* 가로로 나열된 item들 가운데 배치 */
+.cont02 .list .item {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 300px;
+    font-size: 20px;
+    display: inline-block;
+    /* 가로 : 300px
+    세로 : 300px
+    정 원형 만들기
+    글자 가운데 정렬
+    높이 가운데 정렬
+    폰트크기 : 20px
+    item들끼리 가로로 나열 
+    => inline-block사용 */
+}
+
+footer {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 14px;
+}

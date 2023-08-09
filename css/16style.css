@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section {
+    background-color: antiquewhite;
+    margin: 50px 0;
+    padding: 50px;
+}
+section div {
+    background-color: rgb(206, 19, 19);
+}
+section div p {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.flex_01 div {
+    display: flex;
+    justify-content: flex-start;
+    /* justify-content : 수평 정렬 
+    space-between
+    flex-end
+    center / 양끝 여백
+    space-around / 양끝 여백(의 반)
+    space-evenly / 양끝 여백(동일) 
+    flex-start(기본값) */
+}
+.flex_02 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 가로로 나열 된 상태에서 
+    서로 다른 높이값에서 수직 정렬 
+    flex-end
+    flex-start
+    center */
+    height: 200px;
+}
+.flex_02 div p {
+    width: 30%;
+}
+.flex_02 div p:nth-child(2) {
+    height: 100px;
+}
+.flex_03 div {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* 자식을 밑으로 내려줌
+    부모의 공간이 부족할 경우 자식 내려줌 */
+    align-content: space-between;
+    /* 수직, 세로 정렬 
+    space-between
+    flex-end
+    center / 양끝 여백
+    space-around / 양끝 여백(의 반)
+    space-evenly / 양끝 여백(동일) 
+    flex-start(기본값) */
+}
+.flex_03 div p {
+    width: 70%;
+}
+.flex_04 div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* 세로로 배치! 대신에
+    justify-content => 수직, 세로정렬
+    align-content => */
+    justify-content: space-between;
+}
+.flex_05 div {
+    display: flex;
+    justify-content: space-between;
+}
+.flex_05 div p:first-child {
+    order: 1;
+    /* 앞뒤 순서 변경
+    부모에게 display:flex있을 때 사용 */
+}
+.flex_05 div p:nth-child(3) {
+    order: -1;
+}

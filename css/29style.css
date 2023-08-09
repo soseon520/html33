@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+}
+section {
+    width: 1280px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+section div {
+    width: 24%;
+    border: 1px solid #333;
+    height: 400px;
+    background-color: rgb(186, 192, 226);
+    font-size: 50px;
+    text-align: center;
+    line-height: 400px;
+}
+/* 반응형으로 제작 시 해상도 변화에 따라
+스타일 변경 
+미디러쿼리 : 설정한 해상도에 따라 스타일 작성*/
+@media screen and (max-width:1280px) {
+    /* 화면크기 1280px 이하일때 스타일 작성 */
+    section {
+        width: 100%;
+        background-color: rgb(68, 40, 5);
+        flex-wrap: wrap;
+    }
+
+    section div {
+        width: 48%;
+        margin-bottom: 30px;
+        height: 200px;
+        line-height: 200px;
+    }
+}/* 1280px */

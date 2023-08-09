@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+}
+.cont01 {
+    background-color: antiquewhite;
+    padding: 150px 0;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 div {
+    width: 300px;
+    background-color: aquamarine;
+    border: 2px solid #333;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* 해상도 크기 1280px잏하일 때부터 스타일 적용 */
+@media screen and (max-width:1280px) {
+    .cont01 {
+        width: 100%;
+    }
+    .cont01 div {
+        width: 24%;
+    }
+}/* max-width:1280px */
+
+@media screen and (max-width:767px) {
+    .cont01 {
+        flex-wrap: wrap;
+    }
+    .cont01 div {
+        width: 49%;
+    }
+}/* max-width:767px */
+
+@media screen and (max-width:460px) {
+    .cont01 div {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}/* max-width:460px */
+
+/* 해상도크기 중단점 max-width */
+/* 
+태블릿으로 넘어가는 크기 1024px
+헤더메뉴 스타일 변화 시점
+768 ~ 1024 : 태블릿
+461 ~ 767 : 큰모바일, 작은 태블릿
+380 ~ 460 : 큰모바일, 작은 모바일
+280 ! 381 : 작은 모바일
+*/

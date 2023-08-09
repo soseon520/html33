@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+}
+.menu_open {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 130px;
+    line-height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 235, 215, 0.288);
+    color: aliceblue;
+    backdrop-filter: blur(5px);
+}
+header .inner .logo img {
+    height: 130px;
+}
+header .inner {
+    max-width: 1280;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.main_visual {
+    height: 100vh;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual h2 {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    color: aliceblue;
+    z-index: 9;
+}
+.cont01 .list .item {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.cont01 .list .item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont01 .list .item div {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* padding, border를 포함해서 설정값으로 적용 */
+}
+.cont01 .list .item div h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.cont01 .list .item div a {
+    border: 1px solid #000;
+    width: 150px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    margin: 20px 0;
+}
+.cont01 .list .item:nth-child(2) img {
+    order: 1;/* 순서변경 */
+}
+
+@media screen and (max-width:1024px) {
+    header .inner nav {
+        display: none;
+    }
+}
+@media screen and (max-width:640px) {
+    header .inner nav {
+        height: 70px;
+    }
+    .cont .list .item {
+        display: block;
+        height: 400px;
+    }
+    .cont01 .list .item div {
+        width: 100%;
+    }
+}

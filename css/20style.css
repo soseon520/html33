@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+}
+
+/* header */
+header {
+    z-index: 9;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    border-bottom: 1px solid #fff;/* 테두리 : 두께 스타일(실선) 컬러값 */
+}
+header .inner {
+    width: 1280;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner h1 {
+    width: 40px;
+    line-height: 100px;
+    position: relative;
+}
+header .inner h1 a img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+header .inner ul li {
+    display: inline-block;
+    line-height: 100px;
+}
+header .inner nav ul li {
+    margin: 0 20px;
+}
+header .inner .right_nav li:first-child(1) {
+    margin-right: 20px;
+}
+
+/* main */
+.main_visual {
+    height: 100vh;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual h2 {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: rgba(240, 248, 255, 0.411);
+}
+
+/* .cont01 */
+.cont01 .inner {
+    width: 1280px;
+    margin: 140px auto;
+} 
+.cont01 .inner .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cont01 .inner .title h3 {
+    font-size: 45px;
+}
+.cont01 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 .inner .list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont01 .inner .list .left {
+    width: 625px;
+    height: 625px;
+    position: relative;
+}
+.cont01 .inner .list .right {
+    width: 625px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.cont01 .inner .list .right div {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.cont01 .inner .list > div p {
+    height: 40px;
+    background-color: rgb(31, 22, 12);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 0 30px;
+    border-radius: 40px;
+    line-height: 40px;
+}
+
+/* cont02 */
+.cont02 {
+    background-color: antiquewhite;
+    padding: 140px 0;
+}
+.cont02 .inner {
+    width: 1280px;
+    margin: 140px auto;
+}
+.cont02 .inner .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cont02 .inner .title h3 {
+    font-size: 45px;
+}
+.cont02 .inner .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cont02 .inner .list .item {
+    width: 624px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cont02 .inner .list .item img {
+    width: 189px;
+    height: 189px;
+    object-fit: cover;
+}
+.cont02 .inner .list .item div {
+    margin-left: 30px;
+}
+.cont02 .inner .list .item div h4 {
+    font-size: 20px;
+}
+.cont02 .inner .list .item div p {
+    height: 48px;
+}
+.cont02 .inner .list .item div span {
+    margin-top: 28px;
+    display: block;
+}
+footer {
+    padding: 50px 0;
+    background-color: rgb(180, 168, 153);
+    color: #ffffff;
+    text-align: center;
+}

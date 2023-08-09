@@ -1,0 +1,40 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+.cont01 {
+    background-image: url(../img/15.jpg);
+    background-size: cover;
+    padding: 200px 0;
+}
+.cont01 .inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+/* .item들끼리 가로로 나열 
+display:flex를 활용
+양끝에 붙여서 사이간격 동일하게 맞춰 */
+.cont01 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 .inner .list .item {
+    width: 464px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(7px);
+    /* 이미지 블러효과 */
+    text-align: center;
+    line-height: 300px;
+    /* 
+    가로 : 464px
+    세로 : 300px
+    모서리곡선 : 20px
+    배경컬러
+    텍스트컬러
+    글자 가운데 정렬
+    높이 가운데 정렬
+    */
+}

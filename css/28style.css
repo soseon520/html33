@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.transform {
+    width: 400px;
+    margin: 50px auto;
+}
+.transform div {
+    border: 1px solid #333;
+    height: 500px;
+    margin: 50px 0;
+}
+.transform div:first-of-type:hover img {
+    /* transform: scale(1.5); */
+    transform: scale(0.5);
+}
+.transform div:nth-of-type(2):hover img {
+    transform: scaleX(1.5);
+    transform-origin: left top;/* transform 방향 설정 /
+                                  기본ㄱ값이 x, y축이 center /
+                                  top, bottom, left, right, center 사용 */
+}
+.transform div:nth-of-type(3):hover img {
+    transform: scaleY(0);
+    transform-origin: left bottom;
+}
+.transform div:nth-of-type(4) {
+    overflow: hidden;
+    position: relative;
+}
+.transform div:nth-of-type(4):hover img {
+    transform: scale(1.5);
+}
+.transform div:nth-of-type(4) p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    color: aliceblue;
+    background-color: #cacaca3f;
+    padding: 0 50px;
+    box-sizing: border-box;
+    transition: 1s;
+    opacity: 0;/* 숨김처리 */
+    /* display: none; */
+}
+.transform div:nth-of-type(4):hover p {
+    opacity: 1;
+    /* display: flex; */
+}

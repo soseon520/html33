@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* 웹폰트 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Sunflower:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.cont {
+    background-color: antiquewhite;
+    padding: 150px 0;
+}
+.cont h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+}
+.cont .list {
+    width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;  
+}
+.cont .list div{
+    width: 350px;
+    height: 650px;
+    position: relative;/* 중심 */
+}
+.cont .list div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont .list div p {
+    position: absolute;/* 원하는 위치 지정 배치 */
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    color: rgb(41, 31, 14);
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+}
+.cont .top {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 50, 45);
+    color: antiquewhite;
+    text-align: center;
+    line-height: 100px;
+    position: fixed;/* 위치 고정 */
+    right: 50px;
+    bottom: 50px;
+}
+body {
+    height: 2000px;
+}
